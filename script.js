@@ -1,5 +1,3 @@
-//your code here
-
 // Generate a random secret number between 1 and 100
 let secretNumber = Math.floor(Math.random() * 100) + 1;
 
@@ -9,7 +7,7 @@ let currentGuess = null;
 
 // Get references to the input and response elements
 const guessInput = document.getElementById('guess');
-const responseElement = document.getElementById('response');
+const responseElement = document.getElementById('respond'); // Updated to match the new ID
 const submitButton = document.getElementById('submitGuess');
 
 // Event listener for the button click
@@ -61,4 +59,3 @@ submitButton.addEventListener('click', function() {
     // Clear the input field for the next guess
     guessInput.value = '';
 });
-
